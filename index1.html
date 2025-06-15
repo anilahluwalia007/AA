@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel CO₂ Emissions Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .notes {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        .summary {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fuel CO₂ Emissions Comparison</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Fuel Type</th>
+                <th>Carbon Content</th>
+                <th>CO₂ Emissions (per ton of fuel)</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Diesel</strong></td>
+                <td>~86.2%</td>
+                <td><strong>~3.16 metric tons</strong></td>
+                <td>High carbon content due to long hydrocarbon chains.</td>
+            </tr>
+            <tr>
+                <td><strong>Petrol</strong></td>
+                <td>~85.5%</td>
+                <td><strong>~3.14 metric tons</strong></td>
+                <td>Slightly lower carbon than diesel; varies by octane.</td>
+            </tr>
+            <tr>
+                <td><strong>Jet Fuel</strong></td>
+                <td>~86%</td>
+                <td><strong>~3.15 metric tons</strong></td>
+                <td>Similar to diesel (Jet A/A-1 is kerosene-based).</td>
+            </tr>
+            <tr>
+                <td><strong>Natural Gas</strong></td>
+                <td>~75%</td>
+                <td><strong>~2.75 metric tons</strong></td>
+                <td>Primarily methane (CH₄); lower CO₂ due to higher H:C ratio.</td>
+            </tr>
+            <tr>
+                <td><strong>LPG</strong></td>
+                <td>~81.7%</td>
+                <td><strong>~3.00 metric tons</strong></td>
+                <td>Propane/butane mix; higher CO₂ than natural gas but lower than liquid fuels.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="notes">
+        <h3>Key Calculations:</h3>
+        <p>CO₂ emissions are calculated using the formula:</p>
+        <p><code>CO₂ = Mass of Fuel × % Carbon × (44/12) (CO₂/C ratio)</code></p>
+        <ul>
+            <li><strong>Natural Gas Example</strong> (75% carbon): 1,000 kg × 0.75 × 3.67 = 2,753 kg (≈2.75 t)</li>
+            <li><strong>LPG Example</strong> (81.7% carbon): 1,000 kg × 0.817 × 3.67 = 3,000 kg (≈3.00 t)</li>
+        </ul>
+    </div>
+
+    <div class="notes">
+        <h3>Assumptions:</h3>
+        <ol>
+            <li><strong>Complete combustion</strong> (ideal conditions, no methane leakage for natural gas)</li>
+            <li><strong>Fuel composition</strong>:
+                <ul>
+                    <li>Natural gas = ~90% methane (CH₄)</li>
+                    <li>LPG = ~60% propane (C₃H₈) + ~40% butane (C₄H₁₀)</li>
+                </ul>
+            </li>
+            <li>Values align with <strong>IPCC emission factors</strong> and industry standards</li>
+        </ol>
+    </div>
+
+    <div class="summary">
+        <h3>Why the Differences?</h3>
+        <ul>
+            <li><strong>Natural gas</strong> emits less CO₂ per ton because methane (CH₄) has a higher hydrogen-to-carbon ratio, releasing more H₂O and less CO₂</li>
+            <li><strong>LPG</strong> (propane/butane) has a higher carbon content than natural gas but lower than liquid fossil fuels</li>
+            <li><strong>Liquid fuels</strong> (diesel, petrol, jet fuel) have similar emissions due to comparable hydrocarbon structures</li>
+        </ul>
+        
+        <h3>Final Summary:</h3>
+        <p>🔥 <strong>Least CO₂</strong>: Natural gas (<strong>2.75 t/t</strong>)</p>
+        <p>🔥 <strong>Most CO₂</strong>: Diesel (<strong>3.16 t/t</strong>)</p>
+        <p>LPG bridges the gap between gaseous and liquid fuels (<strong>3.00 t/t</strong>)</p>
+    </div>
+</body>
+</html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel CO₂ Emissions Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .notes {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        .summary {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fuel CO₂ Emissions Comparison</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Fuel Type</th>
+                <th>Carbon Content</th>
+                <th>CO₂ Emissions (per ton of fuel)</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Diesel</strong></td>
+                <td>~86.2%</td>
+                <td><strong>~3.16 metric tons</strong></td>
+                <td>High carbon content due to long hydrocarbon chains.</td>
+            </tr>
+            <tr>
+                <td><strong>Petrol</strong></td>
+                <td>~85.5%</td>
+                <td><strong>~3.14 metric tons</strong></td>
+                <td>Slightly lower carbon than diesel; varies by octane.</td>
+            </tr>
+            <tr>
+                <td><strong>Jet Fuel</strong></td>
+                <td>~86%</td>
+                <td><strong>~3.15 metric tons</strong></td>
+                <td>Similar to diesel (Jet A/A-1 is kerosene-based).</td>
+            </tr>
+            <tr>
+                <td><strong>Natural Gas</strong></td>
+                <td>~75%</td>
+                <td><strong>~2.75 metric tons</strong></td>
+                <td>Primarily methane (CH₄); lower CO₂ due to higher H:C ratio.</td>
+            </tr>
+            <tr>
+                <td><strong>LPG</strong></td>
+                <td>~81.7%</td>
+                <td><strong>~3.00 metric tons</strong></td>
+                <td>Propane/butane mix; higher CO₂ than natural gas but lower than liquid fuels.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="notes">
+        <h3>Key Calculations:</h3>
+        <p>CO₂ emissions are calculated using the formula:</p>
+        <p><code>CO₂ = Mass of Fuel × % Carbon × (44/12) (CO₂/C ratio)</code></p>
+        <ul>
+            <li><strong>Natural Gas Example</strong> (75% carbon): 1,000 kg × 0.75 × 3.67 = 2,753 kg (≈2.75 t)</li>
+            <li><strong>LPG Example</strong> (81.7% carbon): 1,000 kg × 0.817 × 3.67 = 3,000 kg (≈3.00 t)</li>
+        </ul>
+    </div>
+
+    <div class="notes">
+        <h3>Assumptions:</h3>
+        <ol>
+            <li><strong>Complete combustion</strong> (ideal conditions, no methane leakage for natural gas)</li>
+            <li><strong>Fuel composition</strong>:
+                <ul>
+                    <li>Natural gas = ~90% methane (CH₄)</li>
+                    <li>LPG = ~60% propane (C₃H₈) + ~40% butane (C₄H₁₀)</li>
+                </ul>
+            </li>
+            <li>Values align with <strong>IPCC emission factors</strong> and industry standards</li>
+        </ol>
+    </div>
+
+    <div class="summary">
+        <h3>Why the Differences?</h3>
+        <ul>
+            <li><strong>Natural gas</strong> emits less CO₂ per ton because methane (CH₄) has a higher hydrogen-to-carbon ratio, releasing more H₂O and less CO₂</li>
+            <li><strong>LPG</strong> (propane/butane) has a higher carbon content than natural gas but lower than liquid fossil fuels</li>
+            <li><strong>Liquid fuels</strong> (diesel, petrol, jet fuel) have similar emissions due to comparable hydrocarbon structures</li>
+        </ul>
+        
+        <h3>Final Summary:</h3>
+        <p>🔥 <strong>Least CO₂</strong>: Natural gas (<strong>2.75 t/t</strong>)</p>
+        <p>🔥 <strong>Most CO₂</strong>: Diesel (<strong>3.16 t/t</strong>)</p>
+        <p>LPG bridges the gap between gaseous and liquid fuels (<strong>3.00 t/t</strong>)</p>
+    </div>
+</body>
+</html>
